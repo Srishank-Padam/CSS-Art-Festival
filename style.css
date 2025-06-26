@@ -1,0 +1,57 @@
+body {
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.crewmate {
+  width: 120px;
+  height: 180px;
+  background-color: red;
+  border-radius: 60px 60px 40px 40px;
+  position: relative;
+}
+
+.visor {
+  width: 70px;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 20px;
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  box-shadow: inset -4px -4px 0 #ffffff50;
+  border: 2px solid #000;
+}
+
+.backpack {
+  width: 40px;
+  height: 100px;
+  background-color: #aa0000;
+  border-radius: 20px;
+  position: absolute;
+  left: -30px;
+  top: 40px;
+}
+
+.leg-left, .leg-right {
+  width: 30px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  bottom: -35px; /* overlaps slightly */
+  border-radius: 10px;
+  z-index: 0;
+  border: 2px solid #000;
+}
+
+.leg-left {
+  left: 25px;
+}
+
+.leg-right {
+  right: 25px;
+}
